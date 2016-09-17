@@ -18,6 +18,16 @@ body {
     font-weight: lighter !important;
 
 }
+.panel-primary > .panel-heading {
+    color: #ffffff;
+    background-color: #86aae0;
+    border-color: #86aae0;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #86aae0;
+    border-color: #86aae0;
+}
 /* map css */
 #map {        
       max-width: 100%;
