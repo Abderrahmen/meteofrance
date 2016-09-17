@@ -51,10 +51,9 @@ angular.module('openWeatherApp.controllers', [])
       $scope.location = loc;
       $scope.getForecastByLocation();
     };
-
     // Get icon image url
     $scope.getIconImageUrl = function(iconName) {
       return (iconName ? $scope.iconBaseUrl + iconName + '.png' : '');
     };
-
+    
   }])
