@@ -32,17 +32,25 @@ angular.module('openWeatherApp.controllers', [])
 
     // Get forecast data for location as given in $scope.location
     $scope.getForecastByLocation = function() {
-
-      if ($scope.location == '' || $scope.location == undefined) {
+      
+      if ($('#location').val() == '') {
         $scope.hasState = 'has-warning';
         $scope.message = "Entrez un ville";
         return;
+      }
+      if ($scope.location != '' && $scope.location != undefined) {
+          $scope.hasState = 'has-success';
+
+          $scope.forecast = openWeatherMap.queryForecastDaily({
+            location: $scope.location
+          });
+          return;
       }
 
       $scope.hasState = 'has-success';
 
       $scope.forecast = openWeatherMap.queryForecastDaily({
-        location: $scope.location
+        location: $('#location').val()
       });
     };
 

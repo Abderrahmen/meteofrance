@@ -269,6 +269,11 @@ depts["94"] = "Val de Marne";
 depts["95"] = "Val d'Oise";
 depts["97"] = "DOM";
 
+
+
+
+
+
   //do this after view has loaded :)
   map = document.getElementById('map');
         paths = map.getElementsByTagName('path');
@@ -276,10 +281,11 @@ depts["97"] = "DOM";
 
           $(paths[i]).click(function(e) {
                 var input = $('#location');
+                input.triggerHandler("change");
                 
                 input.val(depts[e.target.getAttribute('data-num')]).trigger('input');
                 $('#chercherbtn').click();
-            alert("Dpt: "+depts[e.target.getAttribute('data-num')]);
+            //alert("Dpt: "+depts[e.target.getAttribute('data-num')]);
             })
         }
 
