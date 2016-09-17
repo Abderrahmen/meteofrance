@@ -1,0 +1,20 @@
+{
+  "name": "iso-3166-country-codes-angular",
+  "version": "1.0.4",
+  "main": "dist/iso-3166-country-codes-angular.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "homepage": "https://github.com/BluePyth/iso-3166-country-codes-angular",
+  "_release": "1.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.4",
+    "commit": "99f86a8d51a433898994ac1e08f7e7d5140887c0"
+  },
+  "_source": "https://github.com/BluePyth/iso-3166-country-codes-angular.git",
+  "_target": "~1.0.2",
+  "_originalSource": "iso-3166-country-codes-angular"
+}
