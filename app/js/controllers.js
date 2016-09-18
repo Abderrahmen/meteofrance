@@ -42,21 +42,25 @@ angular.module('meteoFranceApp.controllers', [])
 
     // Get forecast data for location as given in $scope.location
     $scope.getForecastByLocation = function() {
-      
+        console.log('------');
+        console.log($scope.location);
+        console.log($('#location').val());
       if ($('#location').val() == '') {
         $scope.hasState = 'has-warning';
         $scope.message = "Entrez une ville";
         return;
       }
+
       if ($scope.location != '' && $scope.location != undefined) {
           $scope.hasState = 'has-success';
 
           $scope.forecast = meteoFranceMap.queryForecastDaily({
             location: $scope.location
           });
+          $scope.location='';
           return;
       }
-      $scope.location = $('#location').val();
+
       $scope.hasState = 'has-success';
 
       $scope.forecast = meteoFranceMap.queryForecastDaily({
