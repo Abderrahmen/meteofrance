@@ -3,7 +3,7 @@
 /* jasmine specs for filters go here */
 
 describe('filter', function() {
-  beforeEach(module('openWeatherApp.filters'));
+  beforeEach(module('meteoFranceApp.filters'));
 
 
   describe('interpolate', function() {

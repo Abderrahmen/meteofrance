@@ -2,13 +2,9 @@
 
 /* Filters */
 
-angular.module('openWeatherApp.filters', [])
+angular.module('meteoFranceApp.filters', [])
 
-  .filter('interpolate', ['version', function(version) {
-    return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
-    }
-  }])
+
 
   .filter('placeholder', [function() {
     return function (input,phvalue) {

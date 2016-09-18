@@ -1,5 +1,5 @@
 {
-  "name": "angular-openweather-app",
+  "name": "angular-meteoFrance-app",
   "version": "0.1.6",
   "authors": [
     "Abderrahmen Khalledi <Abderrahmen.khalledi@gmail.com>"
@@ -8,7 +8,7 @@
   "main": "app/index.html",
   "keywords": [
     "angular",
-    "openweathermap",
+    "meteoFrancemap",
     "weather"
   ],
   "license": "MIT",

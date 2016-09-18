@@ -1,6 +1,6 @@
 {
-  "name": "angular-openweather-app",
-  "description": "A weather forecast app written in AngularJS based on OpenWeatherMap API calls",
+  "name": "angular-meteoFrance-app",
+  "description": "A weather forecast app written in AngularJS based on meteoFranceMap API calls",
   "version": "0.1.6",
   "author": {
     "name": "Abderrahmen khalledi",
